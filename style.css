@@ -1,0 +1,125 @@
+body{
+ 
+}
+.name{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    margin: 5px;
+
+}
+.color-change-2x {
+    animation: color-change-2x 5s linear infinite alternate both;
+}
+
+ @keyframes color-change-2x {
+    0% {
+      background: rgba(20, 196, 209,0.5);
+    }
+    50%{
+        background-color: rgba(85, 85, 220);
+    }
+    100% {
+      background: rgba(178, 44, 255,0.5);
+    }
+  }
+  
+.roll-in-left {
+	animation: roll-in-left 2s ease-in-out both;
+}
+
+ @keyframes roll-in-left {
+    0% {
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .roll-in-right {
+    animation: roll-in-right 2s ease-out both;
+  }
+
+ @keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+  .bounce-in-top {
+	animation: bounce-in-top 1.5s both;
+}
+
+ @keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+  .name h1{
+    background-color: rgb(0, 0, 0);
+    color: rgb(205, 245, 206);
+    border-radius: 3px;
+    text-transform: 45deg;
+  }
+  
+  .text-focus-in {
+    animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+  }
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(10px);
+      opacity:0 ;
+    }
+    50%{
+      color:rgb(250, 0, 0);
+    }
+    100% {
+      filter:blur(0px) ;
+      opacity:1 ;
+    }
+  }
+  
